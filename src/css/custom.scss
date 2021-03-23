@@ -1,0 +1,27 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/utilities";
+
+$custom-container: (
+  xxl: 1200px
+);
+
+$border-radius-xlg:2rem !default;
+
+
+$container-max-widths: map-merge($container-max-widths, $custom-container);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "rounded"), "values"),
+          (4: $border-radius-xlg),
+        ),
+      ),
+    ),
+  )
+);
