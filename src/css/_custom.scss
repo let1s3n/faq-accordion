@@ -1,6 +1,18 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/utilities";
+@import "~bootstrap/scss/functions";
+$border-radius-xlg:2rem;
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$custom-spacers:(
+  6:$spacer*4.5,
+  7:$spacer*6,
+  8:$spacer*7.5,
+  9:$spacer*9,
+  10:$spacer*10.5
+);
+
+$spacers:map-merge($spacers,$custom-spacers);
 
 $custom-container: (
   sm:500px,
@@ -10,11 +22,9 @@ $custom-container: (
   xxl: 1001px
 );
 
-$border-radius-xlg:2rem !default;
-
-
 $container-max-widths: map-merge($container-max-widths, $custom-container);
 
+@import "~bootstrap/scss/utilities";
 $utilities: map-merge(
   $utilities,
   (
@@ -29,4 +39,9 @@ $utilities: map-merge(
     ),
   )
 );
+
+
+
+
+
 
