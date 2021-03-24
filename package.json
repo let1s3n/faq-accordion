@@ -13,6 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.0.0-beta2",
+    "file-loader": "^6.2.0",
+    "postcss-loader": "^5.2.0",
     "webpack": "^5.27.1",
     "webpack-cli": "^4.5.0"
   },
