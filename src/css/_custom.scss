@@ -3,7 +3,11 @@
 @import "bootstrap/scss/utilities";
 
 $custom-container: (
-  xxl: 1200px
+  sm:500px,
+  md:580px,
+  lg:900px,
+  xl:1000px,	
+  xxl: 1001px
 );
 
 $border-radius-xlg:2rem !default;
@@ -25,3 +29,4 @@ $utilities: map-merge(
     ),
   )
 );
+

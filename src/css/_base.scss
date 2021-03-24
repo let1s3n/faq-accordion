@@ -1,0 +1,61 @@
+:root{
+  --soft-red: hsl(14, 88%, 65%);
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+}
+
+.accordion-collapse{
+  border:none;
+}
+
+.accordion-button::after{
+  background-image: url(../img/icon-arrow-down.svg) !important;
+  width:.7rem;
+  height:.7rem;
+  background-size: .7rem;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: url(../img/icon-arrow-down.svg) !important;
+  width:.7rem;
+  height:.7rem;
+  background-size: .7rem;
+}
+.accordion-button{
+  border-top:1px solid rgba(0, 0, 0, 0.125) !important;
+  border-right:none;
+  border-bottom:none;
+  border-left:none;
+  transition: unset !important;
+}
+
+.accordion-button:not(.collapsed){
+  color:unset !important;
+  font-weight: bold; 
+  background-color: unset;
+}
+
+.accordion-item:first-of-type .accordion-button{
+  border-top: none !important;
+}
+
+.accordion-item:last-of-type .accordion-button{
+  border-bottom:1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.accordion-button:active{
+  border:none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:focus{
+  border-color:unset !important;
+  box-shadow: unset !important;
+  border-top:1px solid rgba(0, 0, 0, 0.125) !important;
+  border-bottom:none !important;
+}
+
+button:focus:not(:focus-visible){
+  outline:none !important;
+}
